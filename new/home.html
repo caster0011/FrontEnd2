@@ -1,0 +1,139 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>home</title>
+  <style>  
+    .Background{
+        width: 100%;  
+      height: 100vh;  
+      background-image: url("background.png");  
+      background-repeat: no-repeat;  
+      background-size: cover;  
+      margin-top: 0px;  
+      position: absolute;  
+      opacity: 0.8;  
+      z-index: -1;  
+    }
+    /* 导航栏样式 */  
+    .NavigationBar {  
+      background-color: #2F2E2D;  
+      overflow: hidden;  
+      position: absolute;  
+      top: 0;  
+      left: 0;  
+      width: 100%;  
+      z-index: 100;
+    }  
+    /* logo样式 */ 
+    .Logo { 
+      position: relative;  
+      top: 10px;
+      left: 10px;
+      width: 150px;
+      height: 30px;
+    }  
+    /* 导航链接样式 */  
+    .NavigationBar a {    
+      display: inline-block;  
+      margin-left: 10px;  /* 调整按键之间的左侧距离 */  
+      padding: 10px 20px;  /* 调整按键的内边距 */  
+      color: #f2f2f2;  
+      text-align: center;  
+      padding: 14px 16px;  
+      text-decoration: none;  
+    
+    }  
+    /* 鼠标悬停在链接上时的样式 */  
+    .NavigationBar a:hover {  
+      background-color: #ddd;  
+      color: black;  
+    }  
+    .SearchPhoto{ 
+      position: relative;  
+      top: 10px;
+      left: 1080px;
+      height: 30px;
+    }
+    .Line{ 
+      position: relative;  
+      top: 10px;
+      left: 1100px;
+      height: 30px;
+    }
+    .HeadPhoto{ 
+      position: relative;  
+      top: 10px;
+      left: 1120px;
+      height: 30px;
+    }
+    /* 图片样式 */  
+    .BigLogo {
+      position:absolute;
+      top: 60px;
+      left: 600px;
+      width: 450px;
+      height: 70px;
+    }
+
+    .Search{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0;
+    }
+
+    .SearchBox {
+      display: flex;
+      position:absolute;
+      top: 350px;
+      left: 500px;
+      width: 650px;
+      height: 30px;
+      line-height: 30px;
+      opacity: 0.6;  
+    }
+
+    .SearchBox Input{
+      flex: 1;
+      height: 50px;
+      line-height: 50px;
+      box-sizing: border-box;
+      outline: none;
+      font-size: 16px;
+    }
+    .SearchBox Button{
+      height: 50px;
+      line-height: 30px;
+      padding: 0 20px;
+      border: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      font-size: 20px;
+    }
+
+
+  </style>
+  
+</head>  
+<body>
+  <div class="Background"></div>  
+  <div class="NavigationBar">  
+    <img class="Logo" src="logo.png" alt="Logo">
+    <a href="home.html">主页面</a>  
+    <a href="record main page.html">我的战绩</a>  
+    <a href="#community">社区</a>  
+    <img class="SearchPhoto" src="search.png" alt="Search">
+    <img class="Line" src="line.png" alt="Line">
+    <img class="HeadPhoto" src="head.png" alt="Head">
+  </div>  
+  <img class="BigLogo" src="logo.png" alt="biglogo"> 
+  <div class="Search">
+    <div class="SearchBox">
+      <input type="text">
+      <button>搜索</button>
+    </div>
+  </div>
+  
+</body>  
+</html>
